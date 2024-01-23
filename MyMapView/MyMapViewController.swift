@@ -114,6 +114,13 @@ extension MyMapViewController: CLLocationManagerDelegate, MKMapViewDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse || status == .authorizedAlways {
             locationManager.startUpdatingLocation()
+        } else {
+            if status == .denied {
+                let alert = UIAlertController(title: "Need permission", message: "Please give a permission for location services", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Change Settings", style: UIAlertAction.Style.default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
     
