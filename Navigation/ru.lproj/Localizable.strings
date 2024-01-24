@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Navigation
+
+  Created by Никита on 24.01.2024.
+  
+*/
+"LoginButton" = "Войти";
+
+"startTitle" = "Старт";
+"pressTimerButton" = "Старт";
+"stopTimerButton" = "Стоп";
+"runTimerButton" = "Начать";
+"goToToTitle" = "Перейти";
+"goToPostButton" = "Перейти к посту";
+"checkGuessButton" = "Угадай число";
+"checkWordLabel" = "Угадай слово";
